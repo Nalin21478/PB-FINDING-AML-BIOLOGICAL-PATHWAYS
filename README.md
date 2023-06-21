@@ -1,7 +1,7 @@
 # PB-FINDING-AML-BIOLOGICAL-PATHWAYS
 This code performs various analyses and visualizations using the TCGAbiolinks package and several other libraries in R. It retrieves gene expression and DNA methylation data from the TCGA-LAML project and performs similarity network fusion (SNF) to identify clusters and perform differential expression analysis. It also performs gene ontology (GO) enrichment analysis and generates visualizations such as heatmaps, volcano plots, dotplots, barplots, and network graphs.
 
-Required Libraries
+#Required Libraries
 TCGAbiolinks
 tidyverse
 maftools
@@ -27,7 +27,7 @@ enrichplot
 igraph
 Please make sure to install these libraries before running the code.
 
-Code Description
+#Code Description
 The code begins by loading all the required libraries.
 
 It retrieves the list of projects using the getGDCprojects() function and then displays the summary of the TCGA-LAML project using the getProjectSummary() function.
@@ -86,7 +86,7 @@ Heatmaps are created to visualize the gene expression patterns of significant ge
 
 Network graphs are generated using the igraph package based on the gene-category associations.
 
-Notes
+#Notes
 Some commented code lines (denoted by #) are present in the code for reference or possible future use.
 The code assumes that the required input data files are available and properly formatted for analysis.
 Please note that running the entire code may take a significant amount of time and computational resources, depending on the size and complexity of the data.
